@@ -6,22 +6,28 @@
 ### Author: Alexander White
 
 ### Links and Resources
-* [PR]()
-* [CodeSandbox]()
+* [Repo](https://github.com/alex-white-401-advanced-javascript/lab-34-remote-crud/)
+* [CodeSandbox](https://codesandbox.io/s/w6620x352l)
 
 ### Modules
 #### React Components
 ##### `index.js`
-Entry point for React application. Establishes connection with Redux store by wrapping `App` in `<Provider />`.
+Index for react application. Renders to `index.html` in `Public` and creates connection to Redux stroe by wrapping `App` in `Provider`
 
 ##### `app.js`
-Class component that connects to Redux store `get` and `destroy` actions and all `records` stored in the store's state. Renders a list of records with "Edit" and "Delete" buttons, which trigger actions.
+`<App />` is a functional component that renders a list of all records with from `RecordList` with `Edit` and `Delete` buttons.
+
+#### `/record`
+
+##### `actions.js`
+
+##### `list.js`
 
 ##### `record.js`
-Class component that connects to Redux store `post`, `put`, and `patch` actions and the `activeRecord` stored in the store's state. Makes a `GET` request to an API server and a form based on the JSON schema returned. When the form is submitted, triggers the appropriate CRUD action based on what was entered:
-* new record - `post`
-* updating entire record - `put`
-* updating parts of record - `patch`
+
+##### `reducer.js`
+
+
 
 #### UML
 ![UML Diagram]()
